@@ -1,0 +1,17 @@
+.bg {
+    background-image: url(https://mdbootstrap.com/img/Photos/Others/background.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: "title";
+    src: url(AntsValley.otf);
+}
+
+.fontTitle {
+    font-family: 'title';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50pt
+}

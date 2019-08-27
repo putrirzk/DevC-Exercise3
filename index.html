@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Exercise 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise 3 - devC</title>
+
+    <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+        />
+
+    <link 
+        rel="stylesheet" 
+        href="style.css" 
+        />
+
+    
 </head>
-<body>
-    <center>
-        <h1>Daftar Planet</h1>
+<body class="bg">
+    <center> 
+        <br>
+        <h1 class="fontTitle"> Planet List </h1> 
+        <hr>
+        <input type="text" id="filter" onkeyup="filterFunction()" placeholder="Search for planets name.."/>
+        <br><br>
+
+        <table class="table table-bordered table-striped table-light">
+                <thead class="thead-dark">
+                  <tr >
+                    <th scope="col" style="text-align: center">Name</th>
+                    <th scope="col" style="text-align: center">Rotation Period</th>
+                    <th scope="col" style="text-align: center">Orbital Period</th>
+                    <th scope="col" style="text-align: center">Diameter</th>
+                    <th scope="col" style="text-align: center">Climate</th>
+                    <th scope="col" style="text-align: center">Gravity</th>
+                    <th scope="col" style="text-align: center">Terrain</th>
+                    <th scope="col" style="text-align: center">Surface Water</th>
+                    <th scope="col" style="text-align: center">Population</th>
+                  </tr>
+                </thead>
+                <tbody id="planetData">
+                </tbody>
+              </table>
     </center>
+    
+    <script src="script.js"></script>
 </body>
 </html>
